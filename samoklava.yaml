@@ -145,8 +145,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0 kx, -3.2 ky]
-        size: [32, 60.5]
+          shift: [0 kx, -3.95 ky]
+        size: [32, 75]
         corner: px
     switches:
       main:
@@ -381,7 +381,7 @@ pcbs:
             - matrix_xpinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "samoklava v0.1\\nby soundmonster"
+          text: "samoklava/ergogen \\nbalderdash v0.1"
           justify: left
       info_r:
         type: text
@@ -391,6 +391,6 @@ pcbs:
           shift: [0.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "samoklava v0.1\\nby soundmonster"
+          text: "samoklava/ergogen \\nbalderdash v0.1"
           justify: right mirror
 
