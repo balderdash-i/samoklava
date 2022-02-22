@@ -29,15 +29,13 @@ points:
           shift: [0, -5]
   zones:
     matrix:
-      # anchor:
-      #   rotate: 5
       key.padding: ky
       columns:
         xpinky:
           stagger: ky
           spread: kx
           key:
-            column_net: P21
+            column_net: P20
         pinky:
           stagger: 0.1 ky
           spread: kx
