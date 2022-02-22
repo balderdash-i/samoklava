@@ -141,8 +141,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0 kx, -3.95 ky]
-        size: [32, 75]
+          shift: [0 kx, -4.125 ky]
+        size: [32, 77]
         corner: px
     switches:
       main:
