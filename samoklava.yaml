@@ -125,7 +125,7 @@ outlines:
           - ref: matrix_xpinky_bottom
             shift: [-0.5 (kx + px), 0]
           - ref: matrix_xpinky_top
-            shift: [-0.5 (kx+px), 0]
+            shift: [-0.5 (kx + px), 0]
     patch_inner:
       - type: polygon
         points:
