@@ -39,13 +39,11 @@ points:
         pinky:
           stagger: 0.1 ky
           spread: kx
-          rotate: -0.
           key:
             column_net: P20
         ring:
           stagger: 0.75 ky
-          spread: kx+0.875
-          rotate: -3
+          spread: kx
           key:
             column_net: P19
         middle:
