@@ -71,7 +71,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2.5  kx, -1 ky]
+        shift: [-2.35  kx, -1 ky]
       columns:
         near:
           spread: kx
@@ -141,9 +141,19 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0 kx, -4.125 ky]
-        size: [32, 77]
+          shift: [0.1 kx, -3.25 ky]
+        size: [32, 60]
         corner: px
+    #controller_area2:
+    #  main:
+    #    type: rectangle
+    #    anchor:
+    #      ref:
+    #        - matrix_inner_top
+    #      shift: [0.875 kx, -4.19 ky]
+    #    size: [kx, ky]
+    #    corner: px
+
     switches:
       main:
         type: keys
@@ -181,6 +191,10 @@ outlines:
         type: outline
         name: controller_area
         operation: add
+      #controller2:
+      #  type: outline
+      #  name: controller_area2
+      #  operation: add
     bottom_outline:
       main:
         type: outline
