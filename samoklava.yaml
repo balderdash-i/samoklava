@@ -141,18 +141,17 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0.1 kx, -3.25 ky]
-        size: [32, 60]
+          shift: [0.3 kx, -4.0 ky]
+        size: [32, 76.5]
         corner: px
-    #controller_area2:
-    #  main:
-    #    type: rectangle
-    #    anchor:
-    #      ref:
-    #        - matrix_inner_top
-    #      shift: [0.875 kx, -4.19 ky]
-    #    size: [kx, ky]
-    #    corner: px
+    controller_area2:
+      main:
+        type: rectangle
+        anchor:
+          - ref: matrix_inner_bottom
+            shift: [1.5 kx-13.625, -2.195 ky]
+        size: [24,10]
+        corner: 2.5px
 
     switches:
       main:
@@ -191,10 +190,10 @@ outlines:
         type: outline
         name: controller_area
         operation: add
-      #controller2:
-      #  type: outline
-      #  name: controller_area2
-      #  operation: add
+      controller2:
+        type: outline
+        name: controller_area2
+        operation: add
     bottom_outline:
       main:
         type: outline
@@ -251,7 +250,7 @@ pcbs:
           ref:
             - matrix_inner_top
           shift: [20, -11]
-          rotate: 270
+          rotate: 270  
       mcu_r:
         type: promicro
         params:
@@ -388,19 +387,19 @@ pcbs:
         type: text
         anchor:
           ref:
-            - matrix_xpinky_bottom
+            - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "samoklava/ergogen \\nbalderdash v0.1"
+          text: "ergogen//samoklava /\nbalderdash-i v0.1\n <3 kepler"
           justify: left
       info_r:
         type: text
         anchor:
           ref:
-            - matrix_xpinky_bottom
+            - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "samoklava/ergogen \\nbalderdash v0.1"
+          text: "ergogen//samoklava /\nbalderdash-i v0.1\n <3 juniper"
           justify: right mirror
 
