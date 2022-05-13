@@ -34,25 +34,21 @@ points:
         xpinky:
           stagger: ky
           spread: kx
-          rotate: 0
           key:
             column_net: P21
         pinky:
           stagger: 0.1 ky
           spread: kx
-          rotate: 0
           key:
             column_net: P20
         ring:
           stagger: 0.75 ky
           spread: kx
-          rotate: 0
           key:
             column_net: P19
         middle:
           stagger: 0.2 ky
           spread: kx
-          rotate: 0
           key:
             column_net: P18
         index:
@@ -75,7 +71,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2.35  kx, -1 ky]
+        shift: [-1.775  kx, -.9 ky]
       columns:
         near:
           spread: kx
@@ -144,19 +140,10 @@ outlines:
         type: rectangle
         anchor:
           ref:
-            - matrix_inner_top
-          shift: [0.3 kx, -4.0 ky]
-        size: [32, 76.5]
+            - matrix_inner_bottom
+          shift: [0.2 kx, -1.7925 ky]
+        size: [32, 74]
         corner: px
-    controller_area2:
-      main:
-        type: rectangle
-        anchor:
-          - ref: matrix_inner_bottom
-            shift: [1.5 kx-13.625, -2.195 ky]
-        size: [24,10]
-        corner: 2.5px
-
     switches:
       main:
         type: keys
@@ -193,10 +180,6 @@ outlines:
       controller:
         type: outline
         name: controller_area
-        operation: add
-      controller2:
-        type: outline
-        name: controller_area2
         operation: add
     bottom_outline:
       main:
@@ -254,7 +237,7 @@ pcbs:
           ref:
             - matrix_inner_top
           shift: [20, -11]
-          rotate: 270  
+          rotate: 270
       mcu_r:
         type: promicro
         params:
@@ -391,19 +374,18 @@ pcbs:
         type: text
         anchor:
           ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
+            - matrix_xpinky_bottom
+          shift: [2.75 kx, 0]
         params:
-          text: "ergogen//samoklava /\nbalderdash-i v0.1\n <3 kepler"
+          text: "samoklava/ergogen \\nbalderdash v0.1"
           justify: left
       info_r:
         type: text
         anchor:
           ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
+            - matrix_xpinky_bottom
+          shift: [2.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "ergogen//samoklava /\nbalderdash-i v0.1\n <3 juniper"
+          text: "samoklava/ergogen \\nbalderdash v0.1"
           justify: right mirror
-
